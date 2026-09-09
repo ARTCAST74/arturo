@@ -317,7 +317,7 @@
   <nav class="links-row" aria-label="Contacto">
     <a class="plain-link" href="https://www.linkedin.com/in/arturocasoria" target="_blank" rel="noopener">LinkedIn</a>
     <a class="plain-link" href="mailto:acastillo@devolumx.com">Correo</a>
-    <a class="plain-link" id="save-contact" href="#" download="Arturo-Castillo.vcf">Guardar Contacto</a>
+    <a class="plain-link" id="save-contact" href="assets/Arturo-Castillo.vcf">Guardar Contacto</a>
   </nav>
 
   <div class="divider"></div>
@@ -337,20 +337,10 @@
 
 <script>
   (function () {
-    var vcard = [
-      'BEGIN:VCARD',
-      'VERSION:3.0',
-      'N:Castillo;Arturo;;;',
-      'FN:Arturo Castillo',
-      'TITLE:Fundador y CEO',
-      'TEL;TYPE=CELL:+525583244826',
-      'EMAIL:acastillo@devolumx.com',
-      'ADR;TYPE=WORK:;;Av. Popocatépetl 415, Sta Cruz Atoyac;Ciudad de México;CDMX;03310;México',
-      'END:VCARD'
-    ].join('\r\n');
-    var dataUrl = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcard);
+    // El vCard ahora es un archivo real (assets/Arturo-Castillo.vcf) en vez de
+    // un data: URI generado aquí — iOS Safari nunca soportó bien el atributo
+    // download sobre data: URIs, así que ese botón no hacía nada en iPhone.
     var link = document.getElementById('save-contact');
-    link.setAttribute('href', dataUrl);
     link.addEventListener('click', function () {
       var original = link.textContent;
       link.textContent = '✓ Contacto guardado';
