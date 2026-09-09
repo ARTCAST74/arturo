@@ -28,14 +28,19 @@
     color: #17181A;
     -webkit-font-smoothing: antialiased;
     position: relative;
+    min-height: 100vh;
     overflow-x: hidden;
   }
   a:focus-visible, button:focus-visible { outline: 2px solid #B8860B; outline-offset: 3px; }
 
   /* ── Fondo dorado animado ── */
+  /* position:absolute (no fixed) a propósito: dos pseudo-elementos fixed con
+     animación infinita apilados es un patrón conocido que hace que WebKit/iOS
+     falle al componer las capas y pinte pantalla negra sólida en algunos
+     iPhones — no se necesita fixed aquí, la página es de una sola pantalla. */
   body::before {
     content: "";
-    position: fixed; inset: 0;
+    position: absolute; inset: 0;
     background:
       radial-gradient(560px 560px at 12% 6%, rgba(212,175,55,0.55), transparent 60%),
       radial-gradient(480px 480px at 88% 18%, rgba(212,175,55,0.48), transparent 60%),
@@ -54,7 +59,7 @@
   /* ── Shimmer sweep (efecto de luz que cruza la pantalla) ── */
   body::after {
     content: "";
-    position: fixed; inset: 0;
+    position: absolute; inset: 0;
     background: linear-gradient(
       115deg,
       transparent 0%,
