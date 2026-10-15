@@ -3,306 +3,497 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arturo Castillo</title>
-<meta name="description" content="Arturo Castillo, Fundador y CEO. AXIOM.IA, DevoluMX y BFM Real Estate.">
-<meta name="theme-color" content="#FFFFFF">
+<title>Arturo Castillo | Fundador y CEO, TITAN DX</title>
+<meta name="description" content="Arturo Castillo, Fundador y CEO. TITAN DX, AXIOM.IA, DevoluMX y BFM Real Estate.">
+<meta name="theme-color" content="#F7F3EA">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://arturo.titan-dx.com/">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Arturo Castillo — Fundador & CEO">
-<meta property="og:description" content="AXIOM.IA, DevoluMX y BFM Real Estate.">
-<meta property="og:image" content="https://artcast74.github.io/arturo/assets/og-image.jpg">
+<meta property="og:title" content="Arturo Castillo | Fundador y CEO">
+<meta property="og:description" content="TITAN DX, AXIOM.IA, DevoluMX y BFM Real Estate.">
+<meta property="og:image" content="https://arturo.titan-dx.com/assets/og-image-v3.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://artcast74.github.io/arturo/">
+<meta property="og:url" content="https://arturo.titan-dx.com/">
+<meta property="og:locale" content="es_MX">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Arturo Castillo — Fundador & CEO">
-<meta name="twitter:description" content="AXIOM.IA, DevoluMX y BFM Real Estate.">
-<meta name="twitter:image" content="https://artcast74.github.io/arturo/assets/og-image.jpg">
+<meta name="twitter:title" content="Arturo Castillo | Fundador y CEO">
+<meta name="twitter:description" content="TITAN DX, AXIOM.IA, DevoluMX y BFM Real Estate.">
+<meta name="twitter:image" content="https://arturo.titan-dx.com/assets/og-image-v3.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Arturo Castillo","jobTitle":"Fundador y CEO","url":"https://arturo.titan-dx.com/","image":"https://arturo.titan-dx.com/assets/img/arturo-retrato.jpg","email":"acastillo@devolumx.com","telephone":"+525532417195","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"sameAs":["https://www.linkedin.com/in/arturocasoria"],"worksFor":[{"@type":"Organization","name":"TITAN DX","description":"Business Intelligence & Strategy: diagnostica, traza el plan y ejecuta."},{"@type":"Organization","name":"AXIOM.IA","url":"https://agenteaxiom.com/"},{"@type":"Organization","name":"DevoluMX","url":"https://devolumx.com/"},{"@type":"Organization","name":"BFM Real Estate","url":"https://inversionesbfm.com/"}]}</script>
 <style>
+  /* COMPAS. El fondo (papel milimetrado) vive en el body como background-image.
+     Sin capas fijas, pseudo-elementos de pantalla completa, blur ni blend. */
+  :root {
+    --paper: #F7F3EA;
+    --paper-dim: #EFE8DB;
+    --surface: #FFFDF8;
+    --ink: #101827;
+    --muted: #5B574E;
+    --rust: #C7620F;
+    --rust-deep: #8E450C;
+    --rust-lite: #F0A458;
+    --on-ink-muted: #BDB6A8;
+    --serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --accent: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --ease: cubic-bezier(.22, 1, .36, 1);
+  }
   * { box-sizing: border-box; }
-  html, body { margin: 0; background: #FFFFFF; }
-  /* CAUSA REAL CONFIRMADA (investigación con fuentes, sept 2026): bug
-     documentado de iOS 26 / Safari 26 "Liquid Glass" — WebKit falla al
-     componer una capa de fondo a pantalla completa (pseudo-elemento
-     position:fixed/absolute + inset:0 con gradientes) contra el nuevo motor
-     de efectos, y la pinta negra sólida. Por eso fallaba igual con fixed o
-     absolute, y con o sin animación — el patrón en sí (pseudo-elemento de
-     fondo full-viewport) es lo que dispara el bug, no el movimiento.
-     Fix: el degradado va directo en el background de <body>, sin
-     pseudo-elemento ni capa de composición extra. */
+  html { -webkit-text-size-adjust: 100%; }
   body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    color: #17181A;
-    -webkit-font-smoothing: antialiased;
+    margin: 0;
     min-height: 100vh;
-    overflow-x: hidden;
-    background-color: #FFFFFF;
-    background-image:
-      radial-gradient(560px 560px at 12% 6%, rgba(212,175,55,0.55), transparent 60%),
-      radial-gradient(480px 480px at 88% 18%, rgba(212,175,55,0.48), transparent 60%),
-      radial-gradient(620px 620px at 18% 82%, rgba(212,175,55,0.52), transparent 60%),
-      radial-gradient(420px 420px at 92% 94%, rgba(212,175,55,0.50), transparent 60%),
-      radial-gradient(360px 360px at 55% 46%, rgba(212,175,55,0.45), transparent 70%);
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-  }
-  a:focus-visible, button:focus-visible { outline: 2px solid #B8860B; outline-offset: 3px; }
-
-  .wrap { max-width: 460px; margin: 0 auto; padding: 56px 24px 48px; position: relative; }
-
-  /* ── Hero ── */
-  .hero { text-align: center; }
-
-  .avatar-wrap {
-    width: 104px; height: 104px;
-    margin: 0 auto 20px;
-    position: relative;
-    display: block;
-  }
-  /* anillo dorado (estático, ver nota de diagnóstico arriba) */
-  .avatar-wrap::before {
-    content: "";
-    position: absolute;
-    inset: -4px;
-    border-radius: 50%;
-    background: conic-gradient(
-      #D4AF37 0deg,
-      #F5E27A 60deg,
-      #B8860B 120deg,
-      #D4AF37 180deg,
-      #F5E27A 240deg,
-      #B8860B 300deg,
-      #D4AF37 360deg
-    );
-    z-index: 0;
-  }
-  /* glow suave detrás */
-  .avatar-wrap::after {
-    content: "";
-    position: absolute;
-    inset: -10px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(212,175,55,0.35) 0%, transparent 70%);
-    z-index: -1;
-    opacity: 0.85;
-  }
-
-  .avatar {
-    width: 104px; height: 104px; border-radius: 50%; object-fit: cover;
-    object-position: center 14%;
-    display: block;
-    position: relative; z-index: 1;
-    border: 3px solid #FFFFFF;
-  }
-
-  .hero-name { font-family: "Geist", "Inter", sans-serif; font-size: 56px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; margin: 0 0 10px; color: #101113; }
-  .hero-title { font-family: "Inter", sans-serif; font-size: 18px; font-weight: 500; color: #4A4A4E; margin: 0 0 14px; }
-  .hero-tags { font-family: "Inter", sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: #6E6E73; margin: 0 0 22px; }
-  .hero-tags .rule { opacity: 0.35; margin: 0 8px; }
-  .hero-phrase { font-size: 15px; font-style: italic; color: #3C3C40; margin: 0 0 26px; line-height: 1.5; }
-
-  .divider { height: 1px; background: rgba(0,0,0,0.1); margin: 30px 0; }
-  .section-label {
-    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6E73;
-    margin: 0 0 14px; text-align: center; font-weight: 400;
-  }
-
-  /* ── WhatsApp CTA ── */
-  .cta {
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-    padding: 14px 18px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
+    color: var(--ink);
+    font-family: var(--body);
     font-size: 16px;
+    line-height: 1.5;
+    font-optical-sizing: auto;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(to right, rgba(199, 98, 15, .20) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(199, 98, 15, .20) 1px, transparent 1px),
+      linear-gradient(to right, rgba(16, 24, 39, .07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(16, 24, 39, .07) 1px, transparent 1px);
+    background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+    background-position: 0 0, 0 0, 0 0, 0 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--rust-deep); outline-offset: 3px; }
+  .on-ink a:focus-visible { outline-color: var(--rust-lite); }
+  img, svg { display: block; max-width: 100%; }
+  h1, h2, h3, p, ul, ol, dl, dd { margin: 0; padding: 0; }
+  ul, ol { list-style: none; }
+  .wrap { width: 100%; max-width: 520px; margin: 0 auto; padding: 0 22px; }
+  .label {
+    font-family: var(--ui);
+    font-size: 10.5px;
     font-weight: 600;
-    transition: opacity 0.15s, transform 0.15s;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
   }
-  .cta:active { transform: scale(0.98); }
-  .cta-whatsapp {
-    background: #25D366; color: #05230F;
-    box-shadow: 0 0 0 4px rgba(6,140,58,0.18);
-  }
-  .cta svg { width: 18px; height: 18px; flex-shrink: 0; }
 
-  /* ── Company cards ── */
-  .company {
+  /* ---------- Barra superior ---------- */
+  .top { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; }
+  .brand { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+  .brand img { width: 40px; height: 40px; }
+  .brand span { color: var(--ink); }
+  .coords { color: var(--rust-deep); text-align: right; line-height: 1.5; font-size: 11px; }
+
+  /* ---------- Hero: el dial ---------- */
+  .dial { margin: 4px -22px 0; }
+  .dial svg { width: 100%; height: auto; overflow: visible; }
+  .ring { transform-origin: 200px 240px; animation: ring-in 1.6s var(--ease) both; }
+  .hero-name { position: relative; margin-top: -26px; }
+  .role { color: var(--rust-deep); display: flex; gap: 10px; align-items: center; }
+  .role::before { content: ""; width: 34px; height: 2px; background: var(--rust-deep); }
+  h1 { font-family: var(--serif); line-height: .84; margin-top: 8px; }
+  h1 .a {
     display: block;
-    padding: 18px 18px 16px;
-    border: 1px solid rgba(0,0,0,0.12);
-    border-left: 3px solid var(--accent, rgba(0,0,0,0.3));
-    border-radius: 14px;
-    margin-bottom: 14px;
-    text-decoration: none;
-    color: inherit;
-    background: #FFFFFF;
-    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-    position: relative;
-    overflow: hidden;
+    font-size: clamp(60px, 22.5vw, 116px);
+    font-weight: 800;
+    letter-spacing: -.055em;
+    margin-left: -3px;
   }
-  /* shimmer en hover de card */
-  .company::after {
-    content: "";
-    position: absolute; inset: 0;
-    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.6) 50%, transparent 60%);
-    background-size: 200% 100%;
-    background-position: -100% 0;
-    transition: background-position 0.5s ease;
-    pointer-events: none;
+  h1 .c {
+    display: block;
+    font-size: clamp(48px, 18.5vw, 96px);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -.05em;
+    line-height: .95;
+    margin-left: 28px;
+    color: var(--rust-deep);
   }
-  .company:hover::after { background-position: 200% 0; }
-  .company:hover {
-    border-color: var(--accent);
-    background: #FAFAFA;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transform: translateY(-2px);
+  .quote {
+    font-family: var(--accent);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(23px, 6.6vw, 29px);
+    letter-spacing: -.025em;
+    line-height: 1.16;
+    margin-top: 22px;
+    padding-left: 16px;
+    border-left: 3px solid var(--rust);
+    max-width: 17em;
   }
-  .company:hover .company-link { text-decoration: underline; text-underline-offset: 3px; }
-  .company-axiom   { --accent: #3B82F6; }
-  .company-devolumx { --accent: #16A34A; }
-  .company-bfm     { --accent: #B8860B; }
-  .company-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-  .company-logo {
-    width: 60px; height: 60px; border-radius: 12px; flex-shrink: 0;
-    object-fit: contain; background: #000; padding: 6px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+  .bearings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 26px;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    background: rgba(247, 243, 234, .9);
   }
-  .company-devolumx .company-logo { background: #FFFFFF; box-shadow: 0 0 0 1px rgba(0,0,0,0.18); }
-  .company-name { font-family: "Inter", sans-serif; font-size: 17px; font-weight: 600; margin: 0; color: #101113; }
-  .company-tag  { font-family: "Inter", sans-serif; font-size: 13px; color: #6E6E73; margin: 0 0 14px; line-height: 1.4; }
-  .company-link { font-size: 13px; font-weight: 600; color: var(--accent-text, var(--accent)); }
-  .company-axiom   { --accent-text: #2563EB; }
-  .company-devolumx { --accent-text: #15803D; }
-  .company-bfm     { --accent-text: #8A6508; }
+  .bearings li {
+    padding: 12px 4px 12px 0;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .bearings li:nth-child(even) { padding-left: 14px; border-left: 1px solid var(--ink); }
+  .bearings li:nth-child(n+3) { border-top: 1px solid var(--ink); }
+  .bearings b { font-family: var(--ui); font-size: 11px; font-weight: 600; color: var(--rust-deep); letter-spacing: .06em; }
 
-  /* ── Próximamente ── */
-  .coming-soon { padding-top: 4px; text-align: center; }
-  .coming-soon-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #8A6508; margin: 0 0 12px; }
-  .coming-soon-logo { width: 160px; height: auto; margin: 0 auto; display: block; opacity: 0.9; }
-
-  /* ── Links ── */
-  .links-row { display: flex; flex-direction: column; gap: 10px; }
-  .plain-link {
-    display: flex; align-items: center; justify-content: center;
-    padding: 13px 18px;
-    border-radius: 12px;
-    border: 1px solid #8A8A8E;
-    background: rgba(0,0,0,0.02);
-    font-family: "Inter", sans-serif;
-    font-size: 16px; font-weight: 600; color: #17181A;
-    text-decoration: none;
-    transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  .btns { display: grid; gap: 10px; margin-top: 22px; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 56px; padding: 0 20px;
+    font-family: var(--serif); font-size: 15px; font-weight: 700; letter-spacing: -.005em;
+    border: 2px solid var(--ink);
+    transition: transform .25s var(--ease), background-color .25s;
   }
-  .plain-link:hover { border-color: #17181A; box-shadow: 0 2px 12px rgba(0,0,0,0.07); transform: translateY(-1px); }
-  .plain-link:active { transform: scale(0.98); }
+  .btn svg { width: 22px; height: 22px; flex: none; }
+  .btn-wa { background: var(--rust-deep); border-color: var(--rust-deep); color: var(--surface); }
+  .btn-wa:hover { background: var(--ink); border-color: var(--ink); transform: translateX(4px); }
+  .btn-ghost { background: var(--surface); color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: var(--paper); transform: translateX(4px); }
 
-  /* ── QR ── */
-  .qr-wrap { text-align: center; }
-  .qr-wrap svg {
-    display: block; margin: 0 auto 10px; width: 140px; height: 140px;
-    padding: 14px; box-sizing: content-box;
-    border: 1px solid rgba(0,0,0,0.1); border-radius: 2px; background: #FFFFFF;
+  /* ---------- Paneles claros (sin bloques oscuros) ---------- */
+  .panel { position: relative; background: var(--surface); border: 2px solid var(--ink); padding: 26px 18px 28px; text-align: center; box-shadow: 6px 6px 0 var(--rust); }
+  .ruler { height: 9px; background: repeating-linear-gradient(90deg, rgba(16, 24, 39, .55) 0 1px, transparent 1px 8px); margin-bottom: 22px; }
+  .lock b { display: block; font-family: var(--serif); font-weight: 800; font-size: 25px; letter-spacing: .32em; text-indent: .32em; line-height: 1; color: var(--ink); }
+  .lock span { display: block; margin-top: 8px; font-family: var(--ui); font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--rust-deep); }
+  .stage { position: relative; }
+  .stage-c { position: absolute; width: 26px; height: 26px; border: 0 solid var(--rust); }
+  .stage-c.tl { top: -8px; left: -8px; border-top-width: 3px; border-left-width: 3px; }
+  .stage-c.tr { top: -8px; right: -8px; border-top-width: 3px; border-right-width: 3px; }
+  .stage-c.bl { bottom: -8px; left: -8px; border-bottom-width: 3px; border-left-width: 3px; }
+  .stage-c.br { bottom: -8px; right: -8px; border-bottom-width: 3px; border-right-width: 3px; }
+
+  /* ---------- TITAN DX ---------- */
+  .titan { margin-top: 56px; }
+  .titan .mark { width: 54px; height: 54px; margin: 0 auto 14px; }
+  h2.big { font-family: var(--serif); font-size: clamp(27px, 7.6vw, 34px); font-weight: 800; line-height: 1.05; letter-spacing: -.04em; margin: 24px auto 0; max-width: 14em; color: var(--ink); }
+  h2.big em { font-family: var(--accent); font-style: italic; font-weight: 300; font-size: 1.24em; letter-spacing: -.045em; color: var(--rust-deep); display: block; line-height: 1.05; margin-top: 2px; }
+  .titan .stage { margin: 30px 10px 0; padding: 22px 6px 18px; background: var(--paper-dim); border: 1px solid rgba(16, 24, 39, .3); }
+  .reads { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .read { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+  .gauge { width: 74px; height: 74px; }
+  .needle { transform-origin: 40px 40px; transform: rotate(var(--a)); animation: sweep 1.4s var(--ease) both; }
+  .read .n { font-family: var(--ui); font-size: 11px; letter-spacing: .08em; color: var(--rust-deep); font-weight: 700; }
+  .read h3 { font-family: var(--serif); font-size: clamp(14px, 4vw, 16px); font-weight: 700; line-height: 1.05; letter-spacing: -.01em; }
+  .btn-titan { width: 100%; background: var(--rust-deep); border-color: var(--rust-deep); color: #FFFFFF; margin-top: 26px; }
+  .btn-titan:hover { background: var(--ink); border-color: var(--ink); transform: translateX(4px); }
+
+  /* ---------- Ecosistema ---------- */
+  .eco { margin-top: 64px; }
+  .eco-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+  .eco-head h2 { font-family: var(--accent); font-style: italic; font-weight: 300; font-size: clamp(30px, 9vw, 40px); line-height: 1; letter-spacing: -.05em; }
+  .eco-head .label { color: var(--rust-deep); }
+  .eco-intro { margin-top: 16px; font-size: 15px; line-height: 1.4; color: #33302a; max-width: 30em; }
+  .allies { margin-top: 8px; display: block; }
+  .co {
+    position: relative; display: grid; grid-template-columns: 58px 1fr; gap: 14px; align-items: start;
+    margin-top: 14px; padding: 16px 16px 14px 14px;
+    background: var(--surface); border: 1px solid var(--ink); border-top: 5px solid var(--brand);
+    transition: transform .3s var(--ease), box-shadow .3s var(--ease);
   }
-  .qr-caption { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #6E6E73; margin: 0; }
+  .co:hover, .co:focus-visible { transform: translateX(4px); box-shadow: 5px 5px 0 var(--brand); }
+  .co img { width: 58px; height: 58px; object-fit: cover; border: 2px solid var(--brand); }
+  .co .cat { display: block; font-family: var(--ui); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--brand); }
+  .co h3 { font-family: var(--serif); font-size: 21px; font-weight: 800; letter-spacing: -.04em; line-height: 1.05; margin-top: 3px; }
+  .co p { font-size: 14.5px; line-height: 1.35; margin-top: 6px; color: #33302a; }
+  .co .go { display: inline-block; margin-top: 10px; font-family: var(--ui); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding-bottom: 2px; border-bottom: 2px solid var(--brand); }
 
-  .footer { text-align: center; margin-top: 6px; }
-  .footer-copy { font-size: 10px; letter-spacing: 0.24em; color: #6E6E73; margin: 0; }
+  /* ---------- Conecta ---------- */
+  .connect { margin-top: 64px; }
+  .connect h2 { font-family: var(--serif); font-size: clamp(46px, 15vw, 76px); font-weight: 800; line-height: .95; letter-spacing: -.06em; }
+  .connect h2 span { color: var(--rust); }
+  .links { margin-top: 22px; border-top: 1px solid var(--ink); }
+  .links a {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    min-height: 62px; border-bottom: 1px solid var(--ink);
+    font-family: var(--serif); font-size: 20px; font-weight: 700; letter-spacing: -.015em; background: rgba(247, 243, 234, .9);
+    transition: padding .3s var(--ease), background-color .3s;
+  }
+  .links a:hover { padding-left: 10px; background: var(--paper-dim); }
+  .links a small { font-family: var(--ui); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--rust-deep); font-weight: 600; }
+  .qrblock { margin-top: 56px; }
+  .qrstage { width: min(100%, 264px); margin: 26px auto 0; padding: 14px; background: #FFFFFF; border: 1px solid var(--ink); }
+  .qrstage svg { width: 100%; height: auto; }
+  .qrblock .scan { margin-top: 24px; font-family: var(--ui); font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+  .qrblock .url { margin-top: 5px; font-family: var(--ui); font-size: 11px; letter-spacing: .04em; color: var(--muted); }
+
+  footer { margin-top: 56px; border-top: 1px solid var(--ink); padding: 18px 0 40px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  footer p { font-family: var(--serif); font-size: 16px; font-weight: 700; letter-spacing: -.01em; }
+  footer .label { color: var(--rust-deep); font-size: 11px; }
+
+  /* ---------- Movimiento ---------- */
+  @keyframes ring-in { from { opacity: 0; transform: rotate(-35deg); } to { opacity: 1; transform: rotate(0); } }
+  @keyframes sweep { from { transform: rotate(0deg); } to { transform: rotate(var(--a)); } }
+  @keyframes rise { from { transform: translateY(16px); } to { transform: none; } }
+  .hero-name > * { animation: rise .9s var(--ease) both; }
+  .hero-name .role { animation-delay: .25s; }
+  h1 { animation: rise .9s var(--ease) .35s both; }
+  .quote { animation-delay: .5s; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+  @media (min-width: 700px) {
+    .wrap { max-width: 560px; }
+    .dial { margin-left: 0; margin-right: 0; }
+  }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .cover { display: block; width: calc(100% + 44px); max-width: none; height: auto; margin: 0 -22px; }
+  .hero-name { margin-top: 26px; }
+  .read-btn { all: unset; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100%; padding: 10px 2px 8px; text-align: center; cursor: pointer; border: 1px solid transparent; transition: background-color .25s, border-color .25s; -webkit-tap-highlight-color: transparent; }
+  .read-btn:hover { background: rgba(199, 98, 15, .08); }
+  .read-btn:focus-visible { outline: 3px solid var(--rust); outline-offset: 2px; }
+  .read-btn[aria-selected="true"] { background: var(--surface); border-color: var(--ink); }
+  .read-btn[aria-selected="true"] .n { color: var(--rust); }
+  .read-btn.sweep .needle { animation: sweep 1.1s var(--ease) both; }
+  .step-out { text-align: left; margin-top: 18px; padding: 16px 16px 18px; background: var(--surface); border: 1px solid var(--ink); border-left: 5px solid var(--rust); min-height: 118px; }
+  .step-k { font-family: var(--ui); font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--rust-deep); }
+  .step-t { margin-top: 6px; font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1.25; letter-spacing: -.02em; }
+  .step-allies { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .step-allies[hidden] { display: none; }
+  .step-allies a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--ink); font-family: var(--ui); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: var(--paper); transition: background-color .2s, color .2s; }
+  .step-allies a:hover, .step-allies a:focus-visible { background: var(--ink); color: var(--paper); }
+  .needs { margin-top: 20px; display: grid; gap: 8px; }
+  .need { all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 10px 14px; border: 1px solid var(--ink); background: var(--surface); cursor: pointer; transition: background-color .25s, color .25s, transform .3s var(--ease); -webkit-tap-highlight-color: transparent; }
+  .need:hover { transform: translateX(4px); }
+  .need:focus-visible { outline: 3px solid var(--rust); outline-offset: 2px; }
+  .need .nk { font-family: var(--ui); font-size: 11px; font-weight: 700; letter-spacing: .1em; color: var(--rust-deep); min-width: 22px; }
+  .need .nt { font-family: var(--serif); font-size: 17px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
+  .need[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+  .need[aria-selected="true"] .nk { color: var(--rust-lite); }
+  .ally { margin-top: 14px; padding: 20px 18px 20px; background: var(--surface); border: 1px solid var(--ink); border-top: 5px solid var(--rust); box-shadow: 6px 6px 0 var(--rust); }
+  .ally-top { display: flex; align-items: center; gap: 14px; }
+  .ally-logo { width: 64px; height: 64px; object-fit: cover; border: 1px solid var(--ink); flex: none; }
+  .ally-cat { display: block; font-family: var(--ui); font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--rust-deep); }
+  .ally-name { font-family: var(--serif); font-size: 28px; font-weight: 800; letter-spacing: -.045em; line-height: 1; margin-top: 4px; }
+  .ally-text { margin-top: 14px; font-size: 16px; line-height: 1.4; color: #2b2f3a; }
+  .ally-btns { margin-top: 18px; display: grid; gap: 10px; }
+  .ally-main { display: flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 16px; background: var(--rust-deep); color: #fff; font-family: var(--ui); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--rust-deep); transition: background-color .25s; }
+  .ally-main:hover, .ally-main:focus-visible { background: var(--ink); border-color: var(--ink); }
+  .ally-site { display: flex; align-items: center; justify-content: center; min-height: 48px; border: 1px solid var(--ink); font-family: var(--ui); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; transition: background-color .25s, color .25s; }
+  .ally-site:hover, .ally-site:focus-visible { background: var(--ink); color: var(--paper); }
+  .ally-site[hidden] { display: none; }
+  .ally.swap { animation: allyIn .45s var(--ease) both; }
+  @keyframes allyIn { from { opacity: .0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .ally.swap { animation: none; } .need:hover { transform: none; } }
+  .step-t, .ally-text, .eco-intro, .quote { text-align: justify; text-align-last: left; text-justify: inter-word; hyphens: auto; -webkit-hyphens: auto; }
 </style>
 </head>
 <body>
+
 <div class="wrap">
-
-  <div class="hero">
-    <div class="avatar-wrap">
-      <img class="avatar" src="assets/arturo.jpg" alt="Arturo Castillo">
-    </div>
-    <h1 class="hero-name">Arturo Castillo</h1>
-    <p class="hero-title">Fundador &amp; CEO</p>
-    <p class="hero-tags">Estrategia<span class="rule">|</span>IA<span class="rule">|</span>Fiscal<span class="rule">|</span>Patrimonio</p>
-    <p class="hero-phrase">"Donde la estrategia se convierte en ejecución."</p>
-    <a class="cta cta-whatsapp" href="https://wa.me/525532417195" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.42 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.19-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.25-8.24m-4.53 4.7c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.13.16 1.75 2.8 4.32 3.81.6.24 1.07.38 1.43.49.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.29-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.13-.16.25-.65.81-.79.98-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.24-.42.08-.16.04-.31-.02-.44-.06-.12-.56-1.36-.78-1.86-.2-.48-.41-.42-.56-.42Z"/></svg>
-      Contactar por WhatsApp
-    </a>
-  </div>
-
-  <div class="divider"></div>
-
   <main>
+    <h1 class="sr">Arturo Castillo, Fundador y CEO</h1>
+    <img class="cover" src="assets/img/portada.webp" width="900" height="1183" alt="Arturo Castillo, Fundador y CEO de TITAN DX, sonriendo frente a una brújula en color óxido" fetchpriority="high">
 
-  <h2 class="section-label">Empresas</h2>
-
-  <a class="company company-axiom" href="https://agenteaxiom.com/" target="_blank" rel="noopener">
-    <div class="company-head">
-      <img class="company-logo" src="assets/logo-axiom.jpg" alt="AXIOM.IA">
-      <p class="company-name">AXIOM.IA</p>
+    <div class="hero-name">
+      <p class="quote">Donde la estrategia se convierte en ejecución.</p>
     </div>
-    <p class="company-tag">Agentes de IA y automatización que operan tu negocio</p>
-    <span class="company-link">Conocer AXIOM.IA →</span>
-  </a>
 
-  <a class="company company-devolumx" href="https://devolumx.com/" target="_blank" rel="noopener">
-    <div class="company-head">
-      <img class="company-logo" src="assets/logo-devolumx.png" alt="DevoluMX">
-      <p class="company-name">DevoluMX</p>
+    <ul class="bearings">
+      <li><b aria-hidden="true">N</b>Estrategia</li>
+      <li><b aria-hidden="true">E</b>IA</li>
+      <li><b aria-hidden="true">S</b>Fiscal</li>
+      <li><b aria-hidden="true">O</b>Patrimonio</li>
+    </ul>
+
+    <div class="btns">
+      <a class="btn btn-wa" href="https://wa.me/525532417195" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.42 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.19-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.25-8.24m-4.53 4.7c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.13.16 1.75 2.8 4.32 3.81.6.24 1.07.38 1.43.49.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.29-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.13-.16.25-.65.81-.79.98-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.24-.42.08-.16.04-.31-.02-.44-.06-.12-.56-1.36-.78-1.86-.2-.48-.41-.42-.56-.42Z"/></svg>WhatsApp</a>
+      <a class="btn btn-ghost" href="assets/Arturo-Castillo.vcf">Guardar contacto</a>
     </div>
-    <p class="company-tag">Recuperación de IVA y estrategia fiscal con resultados medibles</p>
-    <span class="company-link">Explorar DevoluMX →</span>
-  </a>
-
-  <a class="company company-bfm" href="https://inversionesbfm.com/" target="_blank" rel="noopener">
-    <div class="company-head">
-      <img class="company-logo" src="assets/logo-bfm.jpg" alt="BFM Real Estate">
-      <p class="company-name">BFM Real Estate</p>
-    </div>
-    <p class="company-tag">Estrategias patrimoniales e inversión inmobiliaria en CDMX</p>
-    <span class="company-link">Descubrir BFM →</span>
-  </a>
-
-  <div class="divider"></div>
-
-  <div class="coming-soon">
-    <p class="coming-soon-eyebrow">Próximamente</p>
-    <img class="coming-soon-logo" src="assets/logo-titan.png" alt="TITAN DX — Business Intelligence & Strategy">
-  </div>
-
-  <div class="divider"></div>
-
-  <nav class="links-row" aria-label="Contacto">
-    <a class="plain-link" href="https://www.linkedin.com/in/arturocasoria" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="plain-link" href="mailto:acastillo@devolumx.com">Correo</a>
-    <a class="plain-link" id="save-contact" href="assets/Arturo-Castillo.vcf">Guardar Contacto</a>
-  </nav>
-
-  <div class="divider"></div>
-
-  <div class="qr-wrap">
-    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 37 37" shape-rendering="crispEdges" role="img" aria-label="Código QR para artcast74.github.io/arturo"><path stroke="#111111" d="M4 4.5h7m2 0h1m4 0h1m4 0h1m2 0h7M4 5.5h1m5 0h1m1 0h1m1 0h1m1 0h2m3 0h3m2 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m2 0h2m4 0h1m4 0h1m1 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m2 0h3m1 0h1m4 0h1m3 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h6m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m3 0h1m1 0h1m1 0h3m2 0h1m2 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M14 11.5h3m3 0h2m1 0h2M4 12.5h1m1 0h1m1 0h1m1 0h1m3 0h3m2 0h4m5 0h1m2 0h1M4 13.5h1m1 0h3m2 0h1m1 0h3m1 0h1m6 0h3m2 0h1m2 0h1M7 14.5h1m1 0h3m6 0h1m2 0h1m4 0h2m2 0h3M4 15.5h3m5 0h2m3 0h2m1 0h2m1 0h1m3 0h1m3 0h1M8 16.5h5m1 0h2m2 0h4m1 0h4m2 0h1m1 0h2M5 17.5h4m2 0h1m2 0h2m2 0h1m1 0h1m3 0h1m1 0h1m2 0h1m2 0h1M4 18.5h1m1 0h1m2 0h3m2 0h1m2 0h1m2 0h1m1 0h1m3 0h1m1 0h2m1 0h2M4 19.5h4m1 0h1m2 0h3m1 0h1m4 0h2m1 0h1m1 0h1m2 0h1m1 0h1M4 20.5h3m1 0h4m1 0h1m1 0h1m5 0h1m2 0h4m1 0h1m1 0h2M5 21.5h1m3 0h1m2 0h1m1 0h4m2 0h1m3 0h1m1 0h1m2 0h2m1 0h1M4 22.5h1m1 0h3m1 0h1m2 0h4m1 0h1m2 0h1m2 0h3m4 0h2M5 23.5h1m2 0h2m4 0h2m1 0h6m1 0h2m1 0h1m1 0h1m1 0h1M4 24.5h1m1 0h2m1 0h2m1 0h2m1 0h1m2 0h1m2 0h8M12 25.5h3m3 0h1m1 0h1m2 0h2m3 0h1m1 0h3M4 26.5h7m3 0h1m2 0h1m2 0h2m1 0h2m1 0h1m1 0h2m1 0h2M4 27.5h1m5 0h1m3 0h2m3 0h6m3 0h2m2 0h1M4 28.5h1m1 0h3m1 0h1m1 0h2m2 0h1m4 0h1m2 0h5m3 0h1M4 29.5h1m1 0h3m1 0h1m3 0h1m2 0h1m2 0h2m1 0h1m1 0h1m2 0h1m1 0h3M4 30.5h1m1 0h3m1 0h1m1 0h5m3 0h1m1 0h4m1 0h3m2 0h1M4 31.5h1m5 0h1m3 0h1m1 0h1m4 0h2m1 0h1m6 0h1M4 32.5h7m1 0h3m1 0h1m1 0h1m2 0h1m2 0h2m2 0h1m2 0h2"/></svg>
-    <p class="qr-caption">Escanea para conectar</p>
-  </div>
-
   </main>
+</div>
 
-  <div class="footer">
-    <p class="footer-copy">CDMX</p>
+<section class="titan" id="titan" aria-labelledby="t-h">
+  <div class="wrap">
+    <div class="panel">
+      <div class="ruler" aria-hidden="true"></div>
+      <img class="mark" src="assets/img/titan.png" width="54" height="54" alt="Símbolo de TITAN DX">
+      <div class="lock"><b>TITAN DX</b><span>Business Intelligence &amp; Strategy</span></div>
+      <h2 class="big" id="t-h">Datos para decidir. <em>Equipo para ejecutar.</em></h2>
+
+      <div class="stage">
+        <i class="stage-c tl" aria-hidden="true"></i><i class="stage-c tr" aria-hidden="true"></i><i class="stage-c bl" aria-hidden="true"></i><i class="stage-c br" aria-hidden="true"></i>
+        <ol class="reads" role="tablist" aria-label="Método de TITAN DX">
+          <li class="read" role="presentation">
+            <button type="button" class="read-btn" role="tab" id="tab-0" aria-controls="step-out" aria-selected="true" tabindex="0" data-i="0">
+            <svg class="gauge" viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="40" r="36" fill="none" stroke="#101827" stroke-opacity=".7" stroke-width="6" stroke-dasharray="1 5.28"/>
+              <circle cx="40" cy="40" r="26" fill="none" stroke="#C7620F" stroke-width="3" stroke-dasharray="54.4 108.9" transform="rotate(-90 40 40)"/>
+              <g class="needle" style="--a:120deg"><polygon points="40,10 43.5,40 36.5,40" fill="#101827"/></g>
+              <circle cx="40" cy="40" r="3" fill="#C7620F"/>
+            </svg>
+            <div><span class="n">01</span><h3>Diagnóstico</h3></div>
+            </button>
+          </li>
+          <li class="read" role="presentation">
+            <button type="button" class="read-btn" role="tab" id="tab-1" aria-controls="step-out" aria-selected="false" tabindex="-1" data-i="1">
+            <svg class="gauge" viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="40" r="36" fill="none" stroke="#101827" stroke-opacity=".7" stroke-width="6" stroke-dasharray="1 5.28"/>
+              <circle cx="40" cy="40" r="26" fill="none" stroke="#C7620F" stroke-width="3" stroke-dasharray="108.9 54.4" transform="rotate(-90 40 40)"/>
+              <g class="needle" style="--a:240deg"><polygon points="40,10 43.5,40 36.5,40" fill="#101827"/></g>
+              <circle cx="40" cy="40" r="3" fill="#C7620F"/>
+            </svg>
+            <div><span class="n">02</span><h3>Rumbo</h3></div>
+            </button>
+          </li>
+          <li class="read" role="presentation">
+            <button type="button" class="read-btn" role="tab" id="tab-2" aria-controls="step-out" aria-selected="false" tabindex="-1" data-i="2">
+            <svg class="gauge" viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="40" r="36" fill="none" stroke="#101827" stroke-opacity=".7" stroke-width="6" stroke-dasharray="1 5.28"/>
+              <circle cx="40" cy="40" r="26" fill="none" stroke="#C7620F" stroke-width="3"/>
+              <g class="needle" style="--a:358deg"><polygon points="40,10 43.5,40 36.5,40" fill="#101827"/></g>
+              <circle cx="40" cy="40" r="3" fill="#C7620F"/>
+            </svg>
+            <div><span class="n">03</span><h3>Ejecución</h3></div>
+            </button>
+          </li>
+        </ol>
+      </div>
+
+      <div class="step-out" id="step-out" role="tabpanel" aria-live="polite" aria-labelledby="tab-0">
+        <p class="step-k"></p>
+        <p class="step-t"></p>
+        <div class="step-allies" hidden>
+          <a href="https://agenteaxiom.com/" target="_blank" rel="noopener">AXIOM.IA ↗</a>
+          <a href="https://devolumx.com/" target="_blank" rel="noopener">DevoluMX ↗</a>
+          <a href="https://inversionesbfm.com/" target="_blank" rel="noopener">BFM Real Estate ↗</a>
+        </div>
+      </div>
+
+
+      <a class="btn btn-titan" href="https://wa.me/525532417195?text=Hola%20Arturo%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20con%20TITAN%20DX." target="_blank" rel="noopener">Solicitar diagnóstico</a>
+    </div>
   </div>
+</section>
 
+<div class="wrap">
+  <section class="eco" aria-labelledby="e-h">
+    <div class="eco-head"><h2 id="e-h">¿Qué necesitas resolver?</h2><span class="label">Alianzas</span></div>
+    <p class="eco-intro">Trabajo con aliados estratégicos, cada uno con su propio equipo. Elige tu tema y te llevo con el indicado.</p>
+
+    <div class="needs" role="tablist" aria-label="Qué necesitas resolver">
+      <button type="button" class="need" role="tab" id="need-0" aria-controls="ally" aria-selected="true" data-i="0"><span class="nk">01</span><span class="nt">Vender más y automatizar</span></button>
+      <button type="button" class="need" role="tab" id="need-1" aria-controls="ally" aria-selected="false" tabindex="-1" data-i="1"><span class="nk">02</span><span class="nt">Impuestos, contabilidad y nómina</span></button>
+      <button type="button" class="need" role="tab" id="need-2" aria-controls="ally" aria-selected="false" tabindex="-1" data-i="2"><span class="nk">03</span><span class="nt">Invertir en inmuebles</span></button>
+    </div>
+
+    <div class="ally" id="ally" role="tabpanel" aria-live="polite" aria-labelledby="need-0">
+      <div class="ally-top">
+        <img class="ally-logo" src="assets/img/axiom.jpg" width="64" height="64" alt="">
+        <div><span class="ally-cat"></span><h3 class="ally-name"></h3></div>
+      </div>
+      <p class="ally-text"></p>
+      <div class="ally-btns">
+        <a class="ally-main" href="#" target="_blank" rel="noopener"></a>
+        <a class="ally-site" href="#" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+    <span hidden><img id="lg-0" src="assets/img/axiom.jpg" alt=""><img id="lg-1" src="assets/img/devolumx.jpg" alt=""><img id="lg-2" src="assets/img/bfm.jpg" alt=""></span>
+  </section>
+
+  <section class="connect" aria-labelledby="c-h">
+    <h2 id="c-h">Conecta<span>.</span></h2>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/arturocasoria" target="_blank" rel="noopener">LinkedIn <small>Perfil</small></a>
+      <a href="mailto:contacto@titan-dx.com" style="font-size:18px">contacto@titan-dx.com</a>
+    </div>
+    </section>
+
+  <section class="qrblock" aria-label="Código QR de la tarjeta">
+    <div class="panel">
+      <div class="ruler" aria-hidden="true"></div>
+      <div class="lock"><b>TITAN DX</b><span>Business Intelligence &amp; Strategy</span></div>
+      <div class="stage qrstage">
+        <i class="stage-c tl" aria-hidden="true"></i><i class="stage-c tr" aria-hidden="true"></i><i class="stage-c bl" aria-hidden="true"></i><i class="stage-c br" aria-hidden="true"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" role="img" aria-label="Código QR de la tarjeta de Arturo Castillo, con el símbolo de TITAN DX al centro"><rect width="37" height="37" fill="#FFFFFF"/><g fill="#101827"><rect x="11" y="2" width="1" height="1" rx="0.28"/><rect x="13" y="2" width="1" height="1" rx="0.28"/><rect x="14" y="2" width="1" height="1" rx="0.28"/><rect x="16" y="2" width="1" height="1" rx="0.28"/><rect x="18" y="2" width="1" height="1" rx="0.28"/><rect x="19" y="2" width="1" height="1" rx="0.28"/><rect x="20" y="2" width="1" height="1" rx="0.28"/><rect x="21" y="2" width="1" height="1" rx="0.28"/><rect x="22" y="2" width="1" height="1" rx="0.28"/><rect x="24" y="2" width="1" height="1" rx="0.28"/><rect x="26" y="2" width="1" height="1" rx="0.28"/><rect x="10" y="3" width="1" height="1" rx="0.28"/><rect x="12" y="3" width="1" height="1" rx="0.28"/><rect x="13" y="3" width="1" height="1" rx="0.28"/><rect x="16" y="3" width="1" height="1" rx="0.28"/><rect x="21" y="3" width="1" height="1" rx="0.28"/><rect x="23" y="3" width="1" height="1" rx="0.28"/><rect x="24" y="3" width="1" height="1" rx="0.28"/><rect x="10" y="4" width="1" height="1" rx="0.28"/><rect x="12" y="4" width="1" height="1" rx="0.28"/><rect x="17" y="4" width="1" height="1" rx="0.28"/><rect x="18" y="4" width="1" height="1" rx="0.28"/><rect x="19" y="4" width="1" height="1" rx="0.28"/><rect x="20" y="4" width="1" height="1" rx="0.28"/><rect x="21" y="4" width="1" height="1" rx="0.28"/><rect x="23" y="4" width="1" height="1" rx="0.28"/><rect x="24" y="4" width="1" height="1" rx="0.28"/><rect x="26" y="4" width="1" height="1" rx="0.28"/><rect x="10" y="5" width="1" height="1" rx="0.28"/><rect x="15" y="5" width="1" height="1" rx="0.28"/><rect x="16" y="5" width="1" height="1" rx="0.28"/><rect x="17" y="5" width="1" height="1" rx="0.28"/><rect x="19" y="5" width="1" height="1" rx="0.28"/><rect x="20" y="5" width="1" height="1" rx="0.28"/><rect x="21" y="5" width="1" height="1" rx="0.28"/><rect x="23" y="5" width="1" height="1" rx="0.28"/><rect x="24" y="5" width="1" height="1" rx="0.28"/><rect x="25" y="5" width="1" height="1" rx="0.28"/><rect x="26" y="5" width="1" height="1" rx="0.28"/><rect x="10" y="6" width="1" height="1" rx="0.28"/><rect x="11" y="6" width="1" height="1" rx="0.28"/><rect x="13" y="6" width="1" height="1" rx="0.28"/><rect x="15" y="6" width="1" height="1" rx="0.28"/><rect x="17" y="6" width="1" height="1" rx="0.28"/><rect x="18" y="6" width="1" height="1" rx="0.28"/><rect x="19" y="6" width="1" height="1" rx="0.28"/><rect x="21" y="6" width="1" height="1" rx="0.28"/><rect x="25" y="6" width="1" height="1" rx="0.28"/><rect x="26" y="6" width="1" height="1" rx="0.28"/><rect x="10" y="7" width="1" height="1" rx="0.28"/><rect x="11" y="7" width="1" height="1" rx="0.28"/><rect x="12" y="7" width="1" height="1" rx="0.28"/><rect x="16" y="7" width="1" height="1" rx="0.28"/><rect x="17" y="7" width="1" height="1" rx="0.28"/><rect x="23" y="7" width="1" height="1" rx="0.28"/><rect x="24" y="7" width="1" height="1" rx="0.28"/><rect x="26" y="7" width="1" height="1" rx="0.28"/><rect x="10" y="8" width="1" height="1" rx="0.28"/><rect x="12" y="8" width="1" height="1" rx="0.28"/><rect x="14" y="8" width="1" height="1" rx="0.28"/><rect x="16" y="8" width="1" height="1" rx="0.28"/><rect x="18" y="8" width="1" height="1" rx="0.28"/><rect x="20" y="8" width="1" height="1" rx="0.28"/><rect x="22" y="8" width="1" height="1" rx="0.28"/><rect x="24" y="8" width="1" height="1" rx="0.28"/><rect x="26" y="8" width="1" height="1" rx="0.28"/><rect x="11" y="9" width="1" height="1" rx="0.28"/><rect x="12" y="9" width="1" height="1" rx="0.28"/><rect x="14" y="9" width="1" height="1" rx="0.28"/><rect x="15" y="9" width="1" height="1" rx="0.28"/><rect x="19" y="9" width="1" height="1" rx="0.28"/><rect x="21" y="9" width="1" height="1" rx="0.28"/><rect x="4" y="10" width="1" height="1" rx="0.28"/><rect x="7" y="10" width="1" height="1" rx="0.28"/><rect x="8" y="10" width="1" height="1" rx="0.28"/><rect x="9" y="10" width="1" height="1" rx="0.28"/><rect x="10" y="10" width="1" height="1" rx="0.28"/><rect x="12" y="10" width="1" height="1" rx="0.28"/><rect x="21" y="10" width="1" height="1" rx="0.28"/><rect x="25" y="10" width="1" height="1" rx="0.28"/><rect x="26" y="10" width="1" height="1" rx="0.28"/><rect x="27" y="10" width="1" height="1" rx="0.28"/><rect x="29" y="10" width="1" height="1" rx="0.28"/><rect x="30" y="10" width="1" height="1" rx="0.28"/><rect x="31" y="10" width="1" height="1" rx="0.28"/><rect x="32" y="10" width="1" height="1" rx="0.28"/><rect x="33" y="10" width="1" height="1" rx="0.28"/><rect x="4" y="11" width="1" height="1" rx="0.28"/><rect x="5" y="11" width="1" height="1" rx="0.28"/><rect x="6" y="11" width="1" height="1" rx="0.28"/><rect x="7" y="11" width="1" height="1" rx="0.28"/><rect x="11" y="11" width="1" height="1" rx="0.28"/><rect x="15" y="11" width="1" height="1" rx="0.28"/><rect x="16" y="11" width="1" height="1" rx="0.28"/><rect x="19" y="11" width="1" height="1" rx="0.28"/><rect x="22" y="11" width="1" height="1" rx="0.28"/><rect x="23" y="11" width="1" height="1" rx="0.28"/><rect x="25" y="11" width="1" height="1" rx="0.28"/><rect x="27" y="11" width="1" height="1" rx="0.28"/><rect x="28" y="11" width="1" height="1" rx="0.28"/><rect x="29" y="11" width="1" height="1" rx="0.28"/><rect x="31" y="11" width="1" height="1" rx="0.28"/><rect x="33" y="11" width="1" height="1" rx="0.28"/><rect x="34" y="11" width="1" height="1" rx="0.28"/><rect x="4" y="12" width="1" height="1" rx="0.28"/><rect x="7" y="12" width="1" height="1" rx="0.28"/><rect x="8" y="12" width="1" height="1" rx="0.28"/><rect x="10" y="12" width="1" height="1" rx="0.28"/><rect x="11" y="12" width="1" height="1" rx="0.28"/><rect x="13" y="12" width="1" height="1" rx="0.28"/><rect x="14" y="12" width="1" height="1" rx="0.28"/><rect x="16" y="12" width="1" height="1" rx="0.28"/><rect x="17" y="12" width="1" height="1" rx="0.28"/><rect x="19" y="12" width="1" height="1" rx="0.28"/><rect x="20" y="12" width="1" height="1" rx="0.28"/><rect x="21" y="12" width="1" height="1" rx="0.28"/><rect x="22" y="12" width="1" height="1" rx="0.28"/><rect x="25" y="12" width="1" height="1" rx="0.28"/><rect x="26" y="12" width="1" height="1" rx="0.28"/><rect x="28" y="12" width="1" height="1" rx="0.28"/><rect x="29" y="12" width="1" height="1" rx="0.28"/><rect x="30" y="12" width="1" height="1" rx="0.28"/><rect x="31" y="12" width="1" height="1" rx="0.28"/><rect x="32" y="12" width="1" height="1" rx="0.28"/><rect x="34" y="12" width="1" height="1" rx="0.28"/><rect x="2" y="13" width="1" height="1" rx="0.28"/><rect x="5" y="13" width="1" height="1" rx="0.28"/><rect x="9" y="13" width="1" height="1" rx="0.28"/><rect x="11" y="13" width="1" height="1" rx="0.28"/><rect x="12" y="13" width="1" height="1" rx="0.28"/><rect x="14" y="13" width="1" height="1" rx="0.28"/><rect x="15" y="13" width="1" height="1" rx="0.28"/><rect x="21" y="13" width="1" height="1" rx="0.28"/><rect x="22" y="13" width="1" height="1" rx="0.28"/><rect x="23" y="13" width="1" height="1" rx="0.28"/><rect x="27" y="13" width="1" height="1" rx="0.28"/><rect x="29" y="13" width="1" height="1" rx="0.28"/><rect x="31" y="13" width="1" height="1" rx="0.28"/><rect x="33" y="13" width="1" height="1" rx="0.28"/><rect x="3" y="14" width="1" height="1" rx="0.28"/><rect x="4" y="14" width="1" height="1" rx="0.28"/><rect x="6" y="14" width="1" height="1" rx="0.28"/><rect x="7" y="14" width="1" height="1" rx="0.28"/><rect x="8" y="14" width="1" height="1" rx="0.28"/><rect x="9" y="14" width="1" height="1" rx="0.28"/><rect x="13" y="14" width="1" height="1" rx="0.28"/><rect x="15" y="14" width="1" height="1" rx="0.28"/><rect x="16" y="14" width="1" height="1" rx="0.28"/><rect x="20" y="14" width="1" height="1" rx="0.28"/><rect x="23" y="14" width="1" height="1" rx="0.28"/><rect x="26" y="14" width="1" height="1" rx="0.28"/><rect x="28" y="14" width="1" height="1" rx="0.28"/><rect x="29" y="14" width="1" height="1" rx="0.28"/><rect x="30" y="14" width="1" height="1" rx="0.28"/><rect x="31" y="14" width="1" height="1" rx="0.28"/><rect x="33" y="14" width="1" height="1" rx="0.28"/><rect x="34" y="14" width="1" height="1" rx="0.28"/><rect x="5" y="15" width="1" height="1" rx="0.28"/><rect x="6" y="15" width="1" height="1" rx="0.28"/><rect x="7" y="15" width="1" height="1" rx="0.28"/><rect x="9" y="15" width="1" height="1" rx="0.28"/><rect x="11" y="15" width="1" height="1" rx="0.28"/><rect x="12" y="15" width="1" height="1" rx="0.28"/><rect x="14" y="15" width="1" height="1" rx="0.28"/><rect x="15" y="15" width="1" height="1" rx="0.28"/><rect x="22" y="15" width="1" height="1" rx="0.28"/><rect x="23" y="15" width="1" height="1" rx="0.28"/><rect x="25" y="15" width="1" height="1" rx="0.28"/><rect x="27" y="15" width="1" height="1" rx="0.28"/><rect x="28" y="15" width="1" height="1" rx="0.28"/><rect x="29" y="15" width="1" height="1" rx="0.28"/><rect x="30" y="15" width="1" height="1" rx="0.28"/><rect x="31" y="15" width="1" height="1" rx="0.28"/><rect x="32" y="15" width="1" height="1" rx="0.28"/><rect x="34" y="15" width="1" height="1" rx="0.28"/><rect x="3" y="16" width="1" height="1" rx="0.28"/><rect x="5" y="16" width="1" height="1" rx="0.28"/><rect x="6" y="16" width="1" height="1" rx="0.28"/><rect x="8" y="16" width="1" height="1" rx="0.28"/><rect x="10" y="16" width="1" height="1" rx="0.28"/><rect x="11" y="16" width="1" height="1" rx="0.28"/><rect x="22" y="16" width="1" height="1" rx="0.28"/><rect x="25" y="16" width="1" height="1" rx="0.28"/><rect x="29" y="16" width="1" height="1" rx="0.28"/><rect x="32" y="16" width="1" height="1" rx="0.28"/><rect x="34" y="16" width="1" height="1" rx="0.28"/><rect x="6" y="17" width="1" height="1" rx="0.28"/><rect x="7" y="17" width="1" height="1" rx="0.28"/><rect x="10" y="17" width="1" height="1" rx="0.28"/><rect x="11" y="17" width="1" height="1" rx="0.28"/><rect x="12" y="17" width="1" height="1" rx="0.28"/><rect x="24" y="17" width="1" height="1" rx="0.28"/><rect x="25" y="17" width="1" height="1" rx="0.28"/><rect x="26" y="17" width="1" height="1" rx="0.28"/><rect x="27" y="17" width="1" height="1" rx="0.28"/><rect x="29" y="17" width="1" height="1" rx="0.28"/><rect x="30" y="17" width="1" height="1" rx="0.28"/><rect x="2" y="18" width="1" height="1" rx="0.28"/><rect x="4" y="18" width="1" height="1" rx="0.28"/><rect x="5" y="18" width="1" height="1" rx="0.28"/><rect x="6" y="18" width="1" height="1" rx="0.28"/><rect x="7" y="18" width="1" height="1" rx="0.28"/><rect x="8" y="18" width="1" height="1" rx="0.28"/><rect x="9" y="18" width="1" height="1" rx="0.28"/><rect x="10" y="18" width="1" height="1" rx="0.28"/><rect x="11" y="18" width="1" height="1" rx="0.28"/><rect x="12" y="18" width="1" height="1" rx="0.28"/><rect x="24" y="18" width="1" height="1" rx="0.28"/><rect x="28" y="18" width="1" height="1" rx="0.28"/><rect x="29" y="18" width="1" height="1" rx="0.28"/><rect x="31" y="18" width="1" height="1" rx="0.28"/><rect x="3" y="19" width="1" height="1" rx="0.28"/><rect x="7" y="19" width="1" height="1" rx="0.28"/><rect x="11" y="19" width="1" height="1" rx="0.28"/><rect x="13" y="19" width="1" height="1" rx="0.28"/><rect x="25" y="19" width="1" height="1" rx="0.28"/><rect x="28" y="19" width="1" height="1" rx="0.28"/><rect x="32" y="19" width="1" height="1" rx="0.28"/><rect x="34" y="19" width="1" height="1" rx="0.28"/><rect x="3" y="20" width="1" height="1" rx="0.28"/><rect x="4" y="20" width="1" height="1" rx="0.28"/><rect x="6" y="20" width="1" height="1" rx="0.28"/><rect x="8" y="20" width="1" height="1" rx="0.28"/><rect x="12" y="20" width="1" height="1" rx="0.28"/><rect x="13" y="20" width="1" height="1" rx="0.28"/><rect x="23" y="20" width="1" height="1" rx="0.28"/><rect x="25" y="20" width="1" height="1" rx="0.28"/><rect x="27" y="20" width="1" height="1" rx="0.28"/><rect x="28" y="20" width="1" height="1" rx="0.28"/><rect x="29" y="20" width="1" height="1" rx="0.28"/><rect x="31" y="20" width="1" height="1" rx="0.28"/><rect x="32" y="20" width="1" height="1" rx="0.28"/><rect x="34" y="20" width="1" height="1" rx="0.28"/><rect x="2" y="21" width="1" height="1" rx="0.28"/><rect x="5" y="21" width="1" height="1" rx="0.28"/><rect x="6" y="21" width="1" height="1" rx="0.28"/><rect x="9" y="21" width="1" height="1" rx="0.28"/><rect x="10" y="21" width="1" height="1" rx="0.28"/><rect x="11" y="21" width="1" height="1" rx="0.28"/><rect x="13" y="21" width="1" height="1" rx="0.28"/><rect x="15" y="21" width="1" height="1" rx="0.28"/><rect x="25" y="21" width="1" height="1" rx="0.28"/><rect x="27" y="21" width="1" height="1" rx="0.28"/><rect x="29" y="21" width="1" height="1" rx="0.28"/><rect x="30" y="21" width="1" height="1" rx="0.28"/><rect x="31" y="21" width="1" height="1" rx="0.28"/><rect x="33" y="21" width="1" height="1" rx="0.28"/><rect x="34" y="21" width="1" height="1" rx="0.28"/><rect x="3" y="22" width="1" height="1" rx="0.28"/><rect x="6" y="22" width="1" height="1" rx="0.28"/><rect x="8" y="22" width="1" height="1" rx="0.28"/><rect x="9" y="22" width="1" height="1" rx="0.28"/><rect x="14" y="22" width="1" height="1" rx="0.28"/><rect x="22" y="22" width="1" height="1" rx="0.28"/><rect x="25" y="22" width="1" height="1" rx="0.28"/><rect x="26" y="22" width="1" height="1" rx="0.28"/><rect x="27" y="22" width="1" height="1" rx="0.28"/><rect x="28" y="22" width="1" height="1" rx="0.28"/><rect x="3" y="23" width="1" height="1" rx="0.28"/><rect x="4" y="23" width="1" height="1" rx="0.28"/><rect x="5" y="23" width="1" height="1" rx="0.28"/><rect x="6" y="23" width="1" height="1" rx="0.28"/><rect x="10" y="23" width="1" height="1" rx="0.28"/><rect x="11" y="23" width="1" height="1" rx="0.28"/><rect x="12" y="23" width="1" height="1" rx="0.28"/><rect x="13" y="23" width="1" height="1" rx="0.28"/><rect x="17" y="23" width="1" height="1" rx="0.28"/><rect x="18" y="23" width="1" height="1" rx="0.28"/><rect x="19" y="23" width="1" height="1" rx="0.28"/><rect x="26" y="23" width="1" height="1" rx="0.28"/><rect x="27" y="23" width="1" height="1" rx="0.28"/><rect x="29" y="23" width="1" height="1" rx="0.28"/><rect x="33" y="23" width="1" height="1" rx="0.28"/><rect x="34" y="23" width="1" height="1" rx="0.28"/><rect x="2" y="24" width="1" height="1" rx="0.28"/><rect x="3" y="24" width="1" height="1" rx="0.28"/><rect x="4" y="24" width="1" height="1" rx="0.28"/><rect x="5" y="24" width="1" height="1" rx="0.28"/><rect x="6" y="24" width="1" height="1" rx="0.28"/><rect x="7" y="24" width="1" height="1" rx="0.28"/><rect x="8" y="24" width="1" height="1" rx="0.28"/><rect x="9" y="24" width="1" height="1" rx="0.28"/><rect x="10" y="24" width="1" height="1" rx="0.28"/><rect x="11" y="24" width="1" height="1" rx="0.28"/><rect x="15" y="24" width="1" height="1" rx="0.28"/><rect x="17" y="24" width="1" height="1" rx="0.28"/><rect x="18" y="24" width="1" height="1" rx="0.28"/><rect x="20" y="24" width="1" height="1" rx="0.28"/><rect x="21" y="24" width="1" height="1" rx="0.28"/><rect x="22" y="24" width="1" height="1" rx="0.28"/><rect x="24" y="24" width="1" height="1" rx="0.28"/><rect x="26" y="24" width="1" height="1" rx="0.28"/><rect x="27" y="24" width="1" height="1" rx="0.28"/><rect x="28" y="24" width="1" height="1" rx="0.28"/><rect x="29" y="24" width="1" height="1" rx="0.28"/><rect x="30" y="24" width="1" height="1" rx="0.28"/><rect x="31" y="24" width="1" height="1" rx="0.28"/><rect x="34" y="24" width="1" height="1" rx="0.28"/><rect x="9" y="25" width="1" height="1" rx="0.28"/><rect x="11" y="25" width="1" height="1" rx="0.28"/><rect x="15" y="25" width="1" height="1" rx="0.28"/><rect x="16" y="25" width="1" height="1" rx="0.28"/><rect x="22" y="25" width="1" height="1" rx="0.28"/><rect x="24" y="25" width="1" height="1" rx="0.28"/><rect x="25" y="25" width="1" height="1" rx="0.28"/><rect x="26" y="25" width="1" height="1" rx="0.28"/><rect x="29" y="25" width="1" height="1" rx="0.28"/><rect x="31" y="25" width="1" height="1" rx="0.28"/><rect x="33" y="25" width="1" height="1" rx="0.28"/><rect x="2" y="26" width="1" height="1" rx="0.28"/><rect x="3" y="26" width="1" height="1" rx="0.28"/><rect x="4" y="26" width="1" height="1" rx="0.28"/><rect x="5" y="26" width="1" height="1" rx="0.28"/><rect x="6" y="26" width="1" height="1" rx="0.28"/><rect x="7" y="26" width="1" height="1" rx="0.28"/><rect x="8" y="26" width="1" height="1" rx="0.28"/><rect x="9" y="26" width="1" height="1" rx="0.28"/><rect x="10" y="26" width="1" height="1" rx="0.28"/><rect x="12" y="26" width="1" height="1" rx="0.28"/><rect x="14" y="26" width="1" height="1" rx="0.28"/><rect x="15" y="26" width="1" height="1" rx="0.28"/><rect x="16" y="26" width="1" height="1" rx="0.28"/><rect x="18" y="26" width="1" height="1" rx="0.28"/><rect x="20" y="26" width="1" height="1" rx="0.28"/><rect x="21" y="26" width="1" height="1" rx="0.28"/><rect x="22" y="26" width="1" height="1" rx="0.28"/><rect x="26" y="26" width="1" height="1" rx="0.28"/><rect x="27" y="26" width="1" height="1" rx="0.28"/><rect x="28" y="26" width="1" height="1" rx="0.28"/><rect x="29" y="26" width="1" height="1" rx="0.28"/><rect x="30" y="26" width="1" height="1" rx="0.28"/><rect x="33" y="26" width="1" height="1" rx="0.28"/><rect x="10" y="27" width="1" height="1" rx="0.28"/><rect x="11" y="27" width="1" height="1" rx="0.28"/><rect x="12" y="27" width="1" height="1" rx="0.28"/><rect x="13" y="27" width="1" height="1" rx="0.28"/><rect x="14" y="27" width="1" height="1" rx="0.28"/><rect x="15" y="27" width="1" height="1" rx="0.28"/><rect x="19" y="27" width="1" height="1" rx="0.28"/><rect x="20" y="27" width="1" height="1" rx="0.28"/><rect x="21" y="27" width="1" height="1" rx="0.28"/><rect x="25" y="27" width="1" height="1" rx="0.28"/><rect x="26" y="27" width="1" height="1" rx="0.28"/><rect x="30" y="27" width="1" height="1" rx="0.28"/><rect x="34" y="27" width="1" height="1" rx="0.28"/><rect x="10" y="28" width="1" height="1" rx="0.28"/><rect x="11" y="28" width="1" height="1" rx="0.28"/><rect x="12" y="28" width="1" height="1" rx="0.28"/><rect x="14" y="28" width="1" height="1" rx="0.28"/><rect x="15" y="28" width="1" height="1" rx="0.28"/><rect x="17" y="28" width="1" height="1" rx="0.28"/><rect x="18" y="28" width="1" height="1" rx="0.28"/><rect x="19" y="28" width="1" height="1" rx="0.28"/><rect x="20" y="28" width="1" height="1" rx="0.28"/><rect x="21" y="28" width="1" height="1" rx="0.28"/><rect x="22" y="28" width="1" height="1" rx="0.28"/><rect x="23" y="28" width="1" height="1" rx="0.28"/><rect x="24" y="28" width="1" height="1" rx="0.28"/><rect x="26" y="28" width="1" height="1" rx="0.28"/><rect x="28" y="28" width="1" height="1" rx="0.28"/><rect x="30" y="28" width="1" height="1" rx="0.28"/><rect x="32" y="28" width="1" height="1" rx="0.28"/><rect x="34" y="28" width="1" height="1" rx="0.28"/><rect x="10" y="29" width="1" height="1" rx="0.28"/><rect x="11" y="29" width="1" height="1" rx="0.28"/><rect x="15" y="29" width="1" height="1" rx="0.28"/><rect x="16" y="29" width="1" height="1" rx="0.28"/><rect x="19" y="29" width="1" height="1" rx="0.28"/><rect x="20" y="29" width="1" height="1" rx="0.28"/><rect x="24" y="29" width="1" height="1" rx="0.28"/><rect x="25" y="29" width="1" height="1" rx="0.28"/><rect x="26" y="29" width="1" height="1" rx="0.28"/><rect x="30" y="29" width="1" height="1" rx="0.28"/><rect x="31" y="29" width="1" height="1" rx="0.28"/><rect x="33" y="29" width="1" height="1" rx="0.28"/><rect x="34" y="29" width="1" height="1" rx="0.28"/><rect x="12" y="30" width="1" height="1" rx="0.28"/><rect x="13" y="30" width="1" height="1" rx="0.28"/><rect x="14" y="30" width="1" height="1" rx="0.28"/><rect x="17" y="30" width="1" height="1" rx="0.28"/><rect x="22" y="30" width="1" height="1" rx="0.28"/><rect x="23" y="30" width="1" height="1" rx="0.28"/><rect x="24" y="30" width="1" height="1" rx="0.28"/><rect x="25" y="30" width="1" height="1" rx="0.28"/><rect x="26" y="30" width="1" height="1" rx="0.28"/><rect x="27" y="30" width="1" height="1" rx="0.28"/><rect x="28" y="30" width="1" height="1" rx="0.28"/><rect x="29" y="30" width="1" height="1" rx="0.28"/><rect x="30" y="30" width="1" height="1" rx="0.28"/><rect x="31" y="30" width="1" height="1" rx="0.28"/><rect x="12" y="31" width="1" height="1" rx="0.28"/><rect x="15" y="31" width="1" height="1" rx="0.28"/><rect x="17" y="31" width="1" height="1" rx="0.28"/><rect x="18" y="31" width="1" height="1" rx="0.28"/><rect x="21" y="31" width="1" height="1" rx="0.28"/><rect x="22" y="31" width="1" height="1" rx="0.28"/><rect x="23" y="31" width="1" height="1" rx="0.28"/><rect x="24" y="31" width="1" height="1" rx="0.28"/><rect x="27" y="31" width="1" height="1" rx="0.28"/><rect x="29" y="31" width="1" height="1" rx="0.28"/><rect x="30" y="31" width="1" height="1" rx="0.28"/><rect x="31" y="31" width="1" height="1" rx="0.28"/><rect x="32" y="31" width="1" height="1" rx="0.28"/><rect x="33" y="31" width="1" height="1" rx="0.28"/><rect x="10" y="32" width="1" height="1" rx="0.28"/><rect x="11" y="32" width="1" height="1" rx="0.28"/><rect x="13" y="32" width="1" height="1" rx="0.28"/><rect x="15" y="32" width="1" height="1" rx="0.28"/><rect x="16" y="32" width="1" height="1" rx="0.28"/><rect x="18" y="32" width="1" height="1" rx="0.28"/><rect x="19" y="32" width="1" height="1" rx="0.28"/><rect x="21" y="32" width="1" height="1" rx="0.28"/><rect x="24" y="32" width="1" height="1" rx="0.28"/><rect x="26" y="32" width="1" height="1" rx="0.28"/><rect x="30" y="32" width="1" height="1" rx="0.28"/><rect x="33" y="32" width="1" height="1" rx="0.28"/><rect x="34" y="32" width="1" height="1" rx="0.28"/><rect x="11" y="33" width="1" height="1" rx="0.28"/><rect x="12" y="33" width="1" height="1" rx="0.28"/><rect x="15" y="33" width="1" height="1" rx="0.28"/><rect x="16" y="33" width="1" height="1" rx="0.28"/><rect x="17" y="33" width="1" height="1" rx="0.28"/><rect x="18" y="33" width="1" height="1" rx="0.28"/><rect x="21" y="33" width="1" height="1" rx="0.28"/><rect x="22" y="33" width="1" height="1" rx="0.28"/><rect x="24" y="33" width="1" height="1" rx="0.28"/><rect x="26" y="33" width="1" height="1" rx="0.28"/><rect x="11" y="34" width="1" height="1" rx="0.28"/><rect x="14" y="34" width="1" height="1" rx="0.28"/><rect x="17" y="34" width="1" height="1" rx="0.28"/><rect x="18" y="34" width="1" height="1" rx="0.28"/><rect x="19" y="34" width="1" height="1" rx="0.28"/><rect x="20" y="34" width="1" height="1" rx="0.28"/><rect x="22" y="34" width="1" height="1" rx="0.28"/><rect x="26" y="34" width="1" height="1" rx="0.28"/><rect x="27" y="34" width="1" height="1" rx="0.28"/><rect x="30" y="34" width="1" height="1" rx="0.28"/><rect x="31" y="34" width="1" height="1" rx="0.28"/><rect x="32" y="34" width="1" height="1" rx="0.28"/><rect x="34" y="34" width="1" height="1" rx="0.28"/></g><rect x="2.5" y="2.5" width="6" height="6" rx="1.2" fill="none" stroke="#101827" stroke-width="1"/><rect x="4" y="4" width="3" height="3" rx="0.7" fill="#101827"/><rect x="28.5" y="2.5" width="6" height="6" rx="1.2" fill="none" stroke="#101827" stroke-width="1"/><rect x="30" y="4" width="3" height="3" rx="0.7" fill="#101827"/><rect x="2.5" y="28.5" width="6" height="6" rx="1.2" fill="none" stroke="#101827" stroke-width="1"/><rect x="4" y="30" width="3" height="3" rx="0.7" fill="#101827"/><circle cx="18.5" cy="18.5" r="3.8000000000000003" fill="#FFFFFF"/><circle cx="18.5" cy="18.5" r="3.45" fill="none" stroke="#101827" stroke-width="0.35"/><image href="assets/img/titan.png" x="15.384" y="15.384" width="6.232" height="6.232"/></svg>
+      </div>
+      <p class="scan">Escanea para conectar</p>
+      <p class="url">arturo.titan-dx.com</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>Arturo Castillo · CDMX</p>
+    <span class="label">19.4326° N · 99.1332° O</span>
+  </footer>
 </div>
 
 <script>
-  (function () {
-    // El vCard ahora es un archivo real (assets/Arturo-Castillo.vcf) en vez de
-    // un data: URI generado aquí — iOS Safari nunca soportó bien el atributo
-    // download sobre data: URIs, así que ese botón no hacía nada en iPhone.
-    var link = document.getElementById('save-contact');
-    link.addEventListener('click', function () {
-      var original = link.textContent;
-      link.textContent = '✓ Contacto guardado';
-      setTimeout(function () { link.textContent = original; }, 1500);
+(function () {
+  var steps = [
+    { k: '01 · Diagnóstico', t: 'Primero medimos. Se revisan números, procesos y mercado para saber dónde estás parado.' },
+    { k: '02 · Rumbo', t: 'Luego decidimos. Con los datos sobre la mesa se elige el camino y se ordenan las prioridades.' },
+    { k: '03 · Ejecución', t: 'Después se hace. Cada frente lo opera el aliado que mejor lo domina:', allies: true }
+  ];
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.read-btn'));
+  var out = document.getElementById('step-out');
+  if (!tabs.length || !out) return;
+  var k = out.querySelector('.step-k'), t = out.querySelector('.step-t'), al = out.querySelector('.step-allies');
+  function pick(n, focus) {
+    tabs.forEach(function (b, j) {
+      var on = j === n;
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+      b.tabIndex = on ? 0 : -1;
+      b.classList.remove('sweep');
+      if (on) { void b.offsetWidth; b.classList.add('sweep'); if (focus) b.focus(); }
     });
-  })();
+    out.setAttribute('aria-labelledby', 'tab-' + n);
+    k.textContent = steps[n].k;
+    t.textContent = steps[n].t;
+    al.hidden = !steps[n].allies;
+  }
+  tabs.forEach(function (b, j) {
+    b.addEventListener('click', function () { pick(j, false); });
+    b.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (d) { e.preventDefault(); pick((j + d + tabs.length) % tabs.length, true); }
+    });
+  });
+  pick(0, false);
+})();
+</script>
+<script>
+(function () {
+  var data = [
+    { cat: 'Tecnología e IA', name: 'AXIOM.IA', logo: 'assets/img/axiom.jpg', text: 'Sitios web, apps, diseño e inteligencia artificial para tu negocio.',
+      main: 'Escribir a AXIOM por WhatsApp', mainHref: 'https://wa.me/525637772072?text=' + encodeURIComponent('Hola, vi la tarjeta de Arturo Castillo y quiero vender más y automatizar mi negocio.'), site: 'agenteaxiom.com ↗', siteHref: 'https://agenteaxiom.com/' },
+    { cat: 'Fiscal y contable', name: 'DevoluMX', logo: 'assets/img/devolumx.jpg', text: 'Contabilidad, fiscal, nómina y recuperación de IVA para tu empresa.',
+      main: 'Escribir a DevoluMX por WhatsApp', mainHref: 'https://wa.me/525583244826?text=' + encodeURIComponent('Hola, vi la tarjeta de Arturo Castillo y necesito ayuda con impuestos, contabilidad o nómina.'), site: 'devolumx.com ↗', siteHref: 'https://devolumx.com/' },
+    { cat: 'Inmobiliario', name: 'BFM Real Estate', logo: 'assets/img/bfm.jpg', text: 'Desarrollos residenciales verificados en CDMX para inversionistas patrimoniales.',
+      main: 'Ver desarrollos de BFM', mainHref: 'https://inversionesbfm.com/', site: '', siteHref: '' }
+  ];
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.need'));
+  var box = document.getElementById('ally');
+  if (!tabs.length || !box) return;
+  var logo = box.querySelector('.ally-logo'), cat = box.querySelector('.ally-cat'), nm = box.querySelector('.ally-name'),
+      tx = box.querySelector('.ally-text'), main = box.querySelector('.ally-main'), site = box.querySelector('.ally-site');
+  function pick(n, focus) {
+    var d = data[n];
+    tabs.forEach(function (b, j) { var on = j === n; b.setAttribute('aria-selected', on ? 'true' : 'false'); b.tabIndex = on ? 0 : -1; if (on && focus) b.focus(); });
+    box.setAttribute('aria-labelledby', 'need-' + n);
+    logo.src = document.getElementById('lg-' + n).src; logo.alt = 'Logo de ' + d.name;
+    cat.textContent = d.cat; nm.textContent = d.name; tx.textContent = d.text;
+    main.textContent = d.main; main.href = d.mainHref;
+    if (d.site) { site.hidden = false; site.textContent = d.site; site.href = d.siteHref; } else { site.hidden = true; }
+    box.classList.remove('swap'); void box.offsetWidth; box.classList.add('swap');
+  }
+  tabs.forEach(function (b, j) {
+    b.addEventListener('click', function () { pick(j, false); });
+    b.addEventListener('keydown', function (e) {
+      var k = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1 : e.key === 'ArrowUp' || e.key === 'ArrowLeft' ? -1 : 0;
+      if (k) { e.preventDefault(); pick((j + k + tabs.length) % tabs.length, true); }
+    });
+  });
+  pick(0, false);
+})();
 </script>
 </body>
 </html>
