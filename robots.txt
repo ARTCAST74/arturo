@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arturo.titan-dx.com/sitemap.xml
